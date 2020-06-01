@@ -4,3 +4,13 @@
   color: #cfcfcf;
   border: 1px solid #616161;
 }
+
+.footer ul{
+  list-style: none;
+}
+
+.footer li{
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
