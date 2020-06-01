@@ -22,7 +22,6 @@ const logo = process.env.PUBLIC_URL + '/images/logo.svg';
 function App() {
   const [ ready, setReady ] = useState(false);
   const [ inRegion, setInRegion ] = useState(false);
-  const [ isAuthed, setIsAuthed] = useState(false);
   const [user, setUser] = useState({
     firstName: '',
     lastName: '',
@@ -40,11 +39,6 @@ function App() {
     setReady(true);
   });
 
-  useEffect(() => {
-    if(user.userName){
-      setIsAuthed(true);
-    }
-  },[user])
 
   if(!ready) return <Loading/>
   console.log(user);
